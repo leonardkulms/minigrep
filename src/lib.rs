@@ -1,9 +1,6 @@
 use std::fs;
 
-pub fn run(args: &Vec<String>) {
-    let query = &args[1];
-    let filename = &args[2];
-
+pub fn run(query: &str, filename: &str) {
     println!("searching for {:#?} in {:#?}", query, filename);
 
     let contents = fs::read_to_string(filename)
