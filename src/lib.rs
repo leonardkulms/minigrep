@@ -1,3 +1,4 @@
+use std::error::Error;
 use std::fs;
 
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
