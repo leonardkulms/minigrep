@@ -1,5 +1,6 @@
 use std::error::Error;
 use std::fs;
+use std::env;
 
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     let mut result_vec: Vec<&str> = Vec::new();
